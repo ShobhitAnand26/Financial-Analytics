@@ -57,4 +57,6 @@ mice::md.pattern(sleep)
 #42 rows without any missing values #2 rows with 1 NA NonD
 
 #visualisation
-VIM
+VIM::aggr(sleep,prop=T)
+VIM::matrixplot(sleep)
+VIM::marginmatrix(sleep[c('Gest','Dream')],pch=c(20),col='blue')
